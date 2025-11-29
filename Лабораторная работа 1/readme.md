@@ -7,8 +7,10 @@
    
 Рассмотрим классы по отдельности.
 
-    1) public class Main
-   
+```java
+1) public class Main
+```
+
 Данный класс содержит в себе метод public static void main(String[] args) – входная точка программы. 
 
 Для начала в методе создаются: 
@@ -72,7 +74,9 @@ Scanner sc = new Scanner(System.in); - объект класса для ввод
 
 
 
-    2) public class lab1
+```java
+2) public class lab1
+```
 
 Рассмотрим реализацию каждого метода этого класса:
 
