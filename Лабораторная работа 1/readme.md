@@ -24,41 +24,54 @@ Scanner sc = new Scanner(System.in); - объект класса для ввод
 Методы, вызываемые в case конструкции switch-case:
 
 1. public int sumLastNums(int x) - возвращает сумму двух последних цифр числа.
+
 2. public boolean isPositive (int x) - возвращает 'True', если число x положительное; 'False' - число x отрицательное; если x = 0, то возвращает 'False' с выводом сообщения "Ноль не является ни положительным, ни отрицательным".
+
 3. public boolean isUpperCase(char x) - возвращает 'True' и выводит сообщение: (x + " — большая буква английского алфавита."), если x - заглавный символ английского алфавита; 'False' и вывод сообщения: (x + " — маленькая буква английского алфавита"), если x - строчный символ английского алфавита; просто 'False', если символ другого алфавита.
+
 4. public boolean isDivisor(int a, int b) - возвращает 'True' и выводит сообщение: (a + " делится на " + b + " нацело"), если остаток от деления a на b равняется нулю; так же возвращает еще одно 'True' и выводит сообщение: (b + " делится на " + a + " нацело"), если остаток от деления b на a равняется нулю; 'False' и сообщение: "Ни одно из чисел не делится на другое нацело"), в случае если ни одно число не делится на другое без остатка; и еще один 'False' и сообщение: ("Ошибка: деление на ноль невозможно"), если оба числа a и b равны нулю.
-5. public int LastNumSum(int a, int b) - 
-6. public double safeDiv(int x, int y)
-7. public String makeDecision(int x, int y)
-8. public boolean sum3(int x, int y, int z)
-9. public String age(int x)
-10. public void printDays(String x)
-11. public String reverseListNums(int x)
-12. public int pow(int x, int y)
-13. public boolean equalNum(int x)
-14. public void leftTriangle(int x)
-15. public void guessGame()
-16. public int findLast(int[] arr, int x)
-17. public int[]add (int[] arr, int x, int pos)
-18. public void reverse(int[] arr)
-19. public int[] concat(int[] arr1, int[] arr2)
-20. public int[] deleteNegative(int[] arr)
+5. public int LastNumSum(int a, int b) - возвращает сумму последних цифр двух чисел.
+
+6. public double safeDiv(int x, int y) - возвращает результат деления x на y, либо 0 при делении на ноль.
+
+7. public String makeDecision(int x, int y) - возвращает строку сравнения вида "x > y", "x < y" или "x == y".
+
+8. public boolean sum3(int x, int y, int z) - возвращает 'True' и выводит сообщение: ("из двух чисел можно получить третье с помощью операции сложения"), если сумма двух чисел будет равна третьему числу; В противоположном случае возвращает 'False' и вывод: ("из двух чисел нельзя получить третье с помощью операции сложения").
+
+9. public String age(int x) - возвращает строку, которая состоит из числа x и одного из трех слов ('год', 'года', 'лет').
+
+10. public void printDays(String x) - выводит дни недели, начиная с переданного дня в этот метод.
+
+11. public String reverseListNums(int x) - возвращает строку чисел от x до 0 (включительно).
+
+12. public int pow(int x, int y) - возвращает результат возведения числа x в степень y.
+
+13. public boolean equalNum(int x) - возвращает либо 'True' и выводит сообщение о том, что все цифры числа одинаковы; либо 'False' и сообщение: ("Цифры числа не одинаковы").
+
+14. public void leftTriangle(int x) - выводит прямоугольный треугольник с заданой пользователем высотой x.
+
+15. public void guessGame() - запускает мини - игру "Угадай число", где пользователь пытается угадать число и после угадывания числа выводится количество попыток. 
+
+16. public int findLast(int[] arr, int x) - возвращает индекс последнего вхождения заданого числа x в массиве. Если число x не найдено в массиве, то возвращается -1.
+
+17. public int[]add (int[] arr, int x, int pos) - возвращает новый массив с добавленным элементом в указаную позицию.
+
+18. public void reverse(int[] arr) - изменяет массив так чтобы он был записан задом-наперед.
+
+19. public int[] concat(int[] arr1, int[] arr2) - возвращает объединённый массив (сначала элементы первого массива, затем - второго).
+
+20. public int[] deleteNegative(int[] arr) - возвращает новый массив без отрицательных значений (удаляет их).
+
+
+Вспомогательные методы класса lab1:
+1. public int ReadInt(Scanner sc, String prompt) - вспомогательный метод для ввода целочисленного значения.
+2. public char ReadChar(Scanner sc, String prompt) - вспомогательный метод для ввода одного символа.
 
 
 
 
 
 
-
-
-
-
-
-
-
-Вспомогательные приватные методы текущего класса:
-1) private static int[] numberArr(int[] arr, int number) - Вспомогательный метод заполнения массива исходными числами с клавиатуры.
-2) private static int numberNum(int number) - Вспомогательный метод корректного ввода по условию задания - положительного числа.
 
        2) public class LabWork
 
