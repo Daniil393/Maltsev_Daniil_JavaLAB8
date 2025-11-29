@@ -1,49 +1,48 @@
-# MariyaBorisovaJavaLAB8
-Лабораторная работа 1. ИКНТ, Борисова Мария ИТ18 – группа LAB8
-Лабораторная работа представляет из себя два класса, объединённых одной структурой взаимодействия.
+# Maltsev_Daniil_JavaLAB8
+Лабораторная работа 1. ИКНТ, Мальцев Даниил ИТ18 – группа LAB8
+Лабораторная работа представляет из себя два класса.
+
 1) public class Main 
-2) public class LabWork
+2) public class lab1
    
 Рассмотрим классы по отдельности.
 
     1) public class Main
    
-Данный класс содержит в себе метод 
-public static void main – входную точку всей программы.
-на начальном этапе в данном методе содержатся:
-1) LabWork numberLab = new LabWork(); -  Объект класса LabWork
-2) Scanner scanner = new Scanner(System.in); - Класс ввода данных
-3) DecimalFormat df = new DecimalFormat("#.###"); - Класс округления дробной части числа до определённого количества знаков после запятой.
+Данный класс содержит в себе метод public static void main(String[] args) – входная точка программы. Для начала в методе создаются: 
 
-Далее в методе реализуется конструкция switch-case, которая позволяет наиболее удобным образом обратиться к методам класса LabWork - она позволяет обрабатывать различные случаи (cases) в зависимости от значения переменной.
-Каждый case конструкции switch-case содержит в себе дружественный интерфейс для ввода данных и вызов метода класса public class LabWork, вызов осуществляется элементарными способами:
-Например:
-int[] arrCopy18 = numberLab.add(arrOneEx18, ins, position);
-int [] arrCopy19 = numberLab.reverseBack(arrEx19);
+lab1 tasks = new lab1(); - объект класса lab1
+Scanner sc = new Scanner(System.in); - объект класса для ввода данных
 
-Также каждый case содержит вызов вспомогательных приватных методов внутри текущего класса, для проверки ввода и заполнения данных.
+Далее в методе реализуется конструкция switch-case, которая позволяет наиболее удобным способом обратиться к методам класса lab1.
+Эта конструкция позволяет обрабатывать различные случаи (cases) в зависимости от значения переменной. Каждый case конструкции switch-case
+содержит дружественный интерфейс для ввода данных и вызов определенного метода класса public class lab1.
+
+Также каждый case содержит вызов вспомогательных методов класса lab1, для проверки ввода целочисленного значения или одного символа.
+
 
 Методы, вызываемые в case конструкции switch-case:
-1) public double fraction(double x) - Возвращение дробной части числа X.
-2) public int charToNum(char x) - Вычисление числа через код ASCII.
-3) public boolean is2Digits - Возвращение 'True', если число X двузначное.
-4) public boolean isInRange(int a, int b, int num) - Возвращение 'True' если X входит в указанный диапазон.
-5) public boolean isEqual(int a, int b, int c) - Возвращение 'True, если если все три числа X, Y, Z равны.
-6) public int abs(int x) - Возвращение  модуля числа X.
-7) public boolean is35(int x) - Возвращение 'True', если число X делится нацело на 3 или 5, 'False' - делится и на 3, и на 5.
-8) public int max3(int x, int y, int z) - Возвращение максимального из трех полученных чисел X, Y, Z.
-9) public int sum2(int x, int y) - Возвращение суммы двух чисел X и Y.
-10) public String day(int x) - Возвращение строки, которая будет обозначать текущий день недели где 1- это понедельник, а 7 – воскресенье.
-11) public String listNums(int x) - Возвращение строки, в которой будут записаны все числа от 0 до X.
-12) public String chet(int x) - Возвращение строки, в которой будут записаны все четные числа от 0 до X.
-13) public int numLen(long x) - Возвращение количества знаков в числе X.
-14) public void square(int x) - Вывод на экран квадрата из символов ‘*’ размером X на X.
-15) public void rightTriangle(int x) - Вывод на экран + треугольника из символов ‘*’ у которого X символов в высоту, а количество символов в ряду совпадает с номером строк.
-16) public int findFirst(int[] arr, int x) - Возвращение индекса первого вхождения числа X в массив arr.
-17) public int maxAbs(int[] arr) - Возвращение наибольшего по модулю значения массива Arr.
-18) public int[] add(int[] arr, int[] ins, int pos) - Возвращение нового массива, который будет содержать все элементы массива Arr, однако в позицию Pos будут вставлены значения массива Ins.
-19) public int[] reverseBack(int[] arr) - Возвращение нового массива, в котором значения массива Arr записаны задом наперед.
-20) public int[] findAll(int[] arr, int x) - Возвращение нового массива, в котором записаны индексы всех вхождений числа X в массив Arr.
+
+1. public int sumLastNums(int x) - 
+2. public boolean isPositive (int x)
+3. public boolean isUpperCase(char x)
+4. public boolean isDivisor(int a, int b)
+5. public int LastNumSum(int a, int b)
+6. public double safeDiv(int x, int y)
+7. public String makeDecision(int x, int y)
+8. public boolean sum3(int x, int y, int z)
+9. public String age(int x)
+10. public void printDays(String x)
+11. public String reverseListNums(int x)
+12. public int pow(int x, int y)
+13. public boolean equalNum(int x)
+14. public void leftTriangle(int x)
+15. public void guessGame()
+16. public int findLast(int[] arr, int x)
+17. public int[]add (int[] arr, int x, int pos)
+18. public void reverse(int[] arr)
+19. public int[] concat(int[] arr1, int[] arr2)
+20. public int[] deleteNegative(int[] arr)
 
 Вспомогательные приватные методы текущего класса:
 1) private static int[] numberArr(int[] arr, int number) - Вспомогательный метод заполнения массива исходными числами с клавиатуры.
