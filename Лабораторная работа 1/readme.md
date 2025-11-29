@@ -23,11 +23,11 @@ Scanner sc = new Scanner(System.in); - объект класса для ввод
 
 Методы, вызываемые в case конструкции switch-case:
 
-1. public int sumLastNums(int x) - 
-2. public boolean isPositive (int x)
-3. public boolean isUpperCase(char x)
-4. public boolean isDivisor(int a, int b)
-5. public int LastNumSum(int a, int b)
+1. public int sumLastNums(int x) - возвращает сумму двух последних цифр числа.
+2. public boolean isPositive (int x) - возвращает 'True', если число x положительное; 'False' - число x отрицательное; если x = 0, то возвращает 'False' с выводом сообщения "Ноль не является ни положительным, ни отрицательным".
+3. public boolean isUpperCase(char x) - возвращает 'True' и выводит сообщение: (x + " — большая буква английского алфавита."), если x - заглавный символ английского алфавита; 'False' и вывод сообщения: (x + " — маленькая буква английского алфавита"), если x - строчный символ английского алфавита; просто 'False', если символ другого алфавита.
+4. public boolean isDivisor(int a, int b) - возвращает 'True' и выводит сообщение: (a + " делится на " + b + " нацело"), если остаток от деления a на b равняется нулю; так же возвращает еще одно 'True' и выводит сообщение: (b + " делится на " + a + " нацело"), если остаток от деления b на a равняется нулю; 'False' и сообщение: "Ни одно из чисел не делится на другое нацело"), в случае если ни одно число не делится на другое без остатка; и еще один 'False' и сообщение: ("Ошибка: деление на ноль невозможно"), если оба числа a и b равны нулю.
+5. public int LastNumSum(int a, int b) - 
 6. public double safeDiv(int x, int y)
 7. public String makeDecision(int x, int y)
 8. public boolean sum3(int x, int y, int z)
@@ -43,6 +43,18 @@ Scanner sc = new Scanner(System.in); - объект класса для ввод
 18. public void reverse(int[] arr)
 19. public int[] concat(int[] arr1, int[] arr2)
 20. public int[] deleteNegative(int[] arr)
+
+
+
+
+
+
+
+
+
+
+
+
 
 Вспомогательные приватные методы текущего класса:
 1) private static int[] numberArr(int[] arr, int number) - Вспомогательный метод заполнения массива исходными числами с клавиатуры.
