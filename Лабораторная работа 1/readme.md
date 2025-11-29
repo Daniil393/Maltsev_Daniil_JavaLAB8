@@ -9,7 +9,9 @@
 
     1) public class Main
    
-Данный класс содержит в себе метод public static void main(String[] args) – входная точка программы. Для начала в методе создаются: 
+Данный класс содержит в себе метод public static void main(String[] args) – входная точка программы. 
+
+Для начала в методе создаются: 
 
 lab1 tasks = new lab1(); - объект класса lab1
 Scanner sc = new Scanner(System.in); - объект класса для ввода данных
