@@ -2,9 +2,9 @@
 
 Лабораторная работа представляет из себя:
 
-Класс Main - главный класс, который вызывает в себе классы заданий 1 - 5.
+Класс Main - главный класс, который вызывает в себе классы заданий 1 - 8.
 
-# Классы заданий 1 - 5:
+# Классы заданий 1 - 8:
 
 1) public class Department
 
@@ -15,6 +15,12 @@
 4) public class Person
 
 5) public class Pistol
+
+6) public class Department2
+
+7) public class Employee2
+
+8) public class Name2
 
 Рассмотрим каждый класс индивидуально
 
