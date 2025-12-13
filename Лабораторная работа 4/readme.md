@@ -12,9 +12,9 @@
 
 1.3) public class Person
 
-1.4) public class Book
+1.4) public class Book<br><br>
 
-2.1)
+2.1)<br><br>
 
 3.1) public interface Collector
 
@@ -38,7 +38,7 @@
 
 3.11) public interface Reducer
 
-3.12) public class ReducerUtil
+3.12) public class ReducerUtil<br><br>
 
 Вспомогательный класс:
 public class InputHelper - проверка ввода пользователя
