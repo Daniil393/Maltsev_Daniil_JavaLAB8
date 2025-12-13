@@ -7,23 +7,37 @@
 ## Классы и интерфейсы:
 
 1.1) public class Box
+
 1.2) interface Сравнимое
+
 1.3) public class Person
+
 1.4) public class Book
 
 2.1)
 
 3.1) public interface Collector
+
 3.2) public interface CollectorFactory
+
 3.3) public class CollectUtil
+
 3.4) public interface Predicate
+
 3.5) public class Filter
+
 3.6) public class IntArrayWrapper
+
 3.7) public class IntegerWrapper
+
 3.8) public class StringWrapper
+
 3.9) public interface MyFunction
+
 3.10) public class Transformer
+
 3.11) public interface Reducer
+
 3.12) public class ReducerUtil
 
 Вспомогательный класс:
