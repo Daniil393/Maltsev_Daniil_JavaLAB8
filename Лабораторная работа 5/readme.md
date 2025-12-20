@@ -26,6 +26,8 @@
 
 4.3) public class StudentFileReader
 
+5.1) public class VoicedConsonantsFromFile
+
 Вспомогательный класс:
 public class InputHelper - проверка ввода пользователя
 
