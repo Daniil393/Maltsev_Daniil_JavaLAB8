@@ -185,11 +185,11 @@ Case 2:
 
 Создание кота и мяуканье - один раз:
 
-<img width="370" height="557" alt="image" src="https://github.com/user-attachments/assets/ee83b0cc-1403-43b2-b65b-001c89e15596" />
+<img width="370" height="557" alt="image" src="https://github.com/user-attachments/assets/ee83b0cc-1403-43b2-b65b-001c89e15596" /><br><br>
 
 Кот мяукает 5 раз:
 
-<img width="350" height="314" alt="image" src="https://github.com/user-attachments/assets/3e7089ff-982f-40a9-ba9f-77d6b32b8e18" />
+<img width="350" height="314" alt="image" src="https://github.com/user-attachments/assets/3e7089ff-982f-40a9-ba9f-77d6b32b8e18" /><br><br>
 
 Проверка количества мяуканий:
 
