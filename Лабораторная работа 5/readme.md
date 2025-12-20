@@ -112,14 +112,17 @@ Case 1:
    * void setNumerator(int numerator) - задаёт числитель дроби.
    * void setDenominator(int denominator) - задаёт знаменатель дроби.
 
-Пример работы case 1
+*Пример работы case 1*<br><br>
 
 Ввод дробей:
-<img width="448" height="472" alt="image" src="https://github.com/user-attachments/assets/66e5471a-2073-4046-8939-b6a6016591e0" />
+
+<img width="380" height="472" alt="image" src="https://github.com/user-attachments/assets/66e5471a-2073-4046-8939-b6a6016591e0" /><br><br>
 
 Сравнение дробей:
-<img width="276" height="286" alt="image" src="https://github.com/user-attachments/assets/3d29ec94-dd16-4bab-b7d4-23773e248bcc" />
+
+<img width="276" height="286" alt="image" src="https://github.com/user-attachments/assets/3d29ec94-dd16-4bab-b7d4-23773e248bcc" /><br><br>
 
 Изменение обеих дробей и повторное сравнение:
-<img width="315" height="507" alt="image" src="https://github.com/user-attachments/assets/0b3e74f7-ae9b-481d-85b6-19e024ba26a9" /> <img width="264" height="296" alt="image" src="https://github.com/user-attachments/assets/d4dd3d47-8a21-4ad5-99d9-64c8dba792af" />
 
+<img width="315" height="507" alt="image" src="https://github.com/user-attachments/assets/0b3e74f7-ae9b-481d-85b6-19e024ba26a9" /> <img width="264" height="296" alt="image"
+src="https://github.com/user-attachments/assets/d4dd3d47-8a21-4ad5-99d9-64c8dba792af" />
