@@ -1,6 +1,6 @@
-import zadanie_1_1.Box;
-import zadanie_1_3.Book;
-import zadanie_1_3.Person;
+import zadanie_1_1.*;
+import zadanie_1_3.*;
+import zadanie_2_2.*;
 import zadanie_3.*;
 import java.util.*;
 
@@ -14,7 +14,7 @@ public class Main {
             System.out.println("\n=== Лабораторная работа 4 ===");
             System.out.println("1 - Обобщенная коробка");
             System.out.println("2 - Сравнимое");
-            System.out.println("3 - Поиск максимума");
+            System.out.println("3 - Поиск максимума из коробок");
             System.out.println("4 - Обобщенные методы, автовывод типа. Функция");
             System.out.println("5 - Обобщенные методы, автовывод типа. Фильтр");
             System.out.println("6 - Обобщенные методы, автовывод типа. Сокращение");
@@ -171,10 +171,55 @@ public class Main {
                     break;
 
                 case "3":
-                    //Поиск максимума.
-                    //Создайте метод, принимающий набор Коробок из задачи 3.1.1 и возвращающий максимальное из
-                    //их значений в формате double. Принимаемые методом Коробки могут быть параметризованы
-                    //любыми видами чисел.
+
+                    System.out.println("\n--- Поиск максимума ---");
+
+                    List<Box<? extends Number>> boxes = new ArrayList<>();
+
+                    while (true) {
+                        System.out.println("\nВыберите действие:");
+                        System.out.println("1 - Добавить коробку с Integer");
+                        System.out.println("2 - Добавить коробку с Double");
+                        System.out.println("3 - Найти максимум");
+                        System.out.println("0 - Выход из задания");
+                        System.out.print("Ваш выбор: ");
+
+                        String subChoice = sc.nextLine();
+
+                        try {
+                            switch (subChoice) {
+
+                                case "1":
+                                    int intValue = InputHelper.ReadInt(sc, "Введите целое число: ");
+                                    boxes.add(new Box<>(intValue));
+                                    System.out.println("Коробка с Integer добавлена");
+                                    break;
+
+                                case "2":
+                                    double doubleValue = InputHelper.ReadDouble(sc, "Введите вещественное число: ");
+                                    boxes.add(new Box<>(doubleValue));
+                                    System.out.println("Коробка с Double добавлена");
+                                    break;
+
+                                case "3":
+                                    double max = BoxUtils.findMax(boxes);
+                                    System.out.println("Максимальное значение: " + max);
+                                    break;
+
+                                case "0":
+                                    System.out.println("Выход из задания");
+                                    break;
+
+                                default:
+                                    System.out.println("Ошибка: выберите пункт из меню (0-3)");
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Ошибка: " + e.getMessage());
+                        }
+
+                        if (subChoice.equals("0")) break;
+                    }
+                    break;
 
                 case "4":
 
@@ -237,7 +282,7 @@ public class Main {
                         System.out.println("\n--- Обобщенные методы, автовывод типа. Фильтр ---");
                         System.out.println("1 - фильтрация по длине");
                         System.out.println("2 - фильтрация по элементам");
-                        System.out.println("3 - фильтрация массивов");
+                        System.out.println("3 - фильтрация массивов (без положительных элементов)");
                         System.out.println("0 - Выход из задания");
                         System.out.println("Ваш выбор: ");
                         String subChoice2 = sc.nextLine();
