@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Автор</title>
+</head>
+<body>
+
+<h2>Автор</h2>
+
+<form th:action="@{/authors}" th:object="${author}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+
+    <label>Имя:</label>
+    <input type="text" th:field="*{name}" required/>
+
+    <br><br>
+    <button type="submit">Сохранить</button>
+</form>
+
+<br>
+<a th:href="@{/authors}">Назад</a>
+
+</body>
+</html>
