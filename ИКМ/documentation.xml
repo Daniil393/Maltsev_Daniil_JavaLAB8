@@ -1,4 +1,4 @@
-```xml
+
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDocumentation>
     <project>
@@ -189,4 +189,3 @@ CREATE TABLE books (
         <note>При защите проекта приложи этот файл в архив с исходниками</note>
     </documentationNotes>
 </projectDocumentation>
-```
