@@ -13,41 +13,41 @@
 ## Структура проекта
 ```
 src/
-├── main/
-│   ├── java/ru/psu/librarymvc/
-│   │   ├── AlbumManagerApplication.java   
-│   │   ├── controller/
-│   │   │   ├── AuthorController.java      
-│   │   │   ├── PublisherController.java   
-│   │   │   ├── HomeController.java         
-│   │   │   └── BookController.java         
-│   │   ├── entity/
-│   │   │   ├── Author.java                
-│   │   │   ├── Book.java                   
-│   │   │   └── Publisher.java            
-│   │   └── repository/
-│   │       ├── AuthorRepository.java      
-│   │       ├── BookRepository.java        
-│   │       └── PublisherRepository.java    
-│   │   
-│   │       
-│   └── resources/
-│       ├── static
-│       │   
-│       ├── templates/authors/
-│       │   ├── list.html                   
-│       │   └── form.html                   
-│       │
-│       ├── templates/home_page/                 
-│       │   └── index.html
-│       │
-│       ├── templates/books/
-│       │   ├── list.html                   
-│       │   └── form.html
-│       │
-│       ├── templates/publishers/
-│       │   ├── list.html                   
-│       │   └── form.html
-│       │
-│       └── application.properties         
+└── main/
+   ├── java/ru/psu/librarymvc/
+   │   ├── AlbumManagerApplication.java   
+   │   ├── controller/
+   │   │   ├── AuthorController.java      
+   │   │   ├── PublisherController.java   
+   │   │   ├── HomeController.java         
+   │   │   └── BookController.java         
+   │   ├── entity/
+   │   │   ├── Author.java                
+   │   │   ├── Book.java                   
+   │   │   └── Publisher.java            
+   │   └── repository/
+   │       ├── AuthorRepository.java      
+   │       ├── BookRepository.java        
+   │       └── PublisherRepository.java    
+   │   
+   │       
+   └── resources/
+       ├── static
+       │   
+       ├── templates/authors/
+       │   ├── list.html                   
+       │   └── form.html                   
+       │
+       ├── templates/home_page/                 
+       │   └── index.html
+       │
+       ├── templates/books/
+       │   ├── list.html                   
+       │   └── form.html
+       │
+       ├── templates/publishers/
+       │   ├── list.html                   
+       │   └── form.html
+       │
+       └── application.properties         
 ```
