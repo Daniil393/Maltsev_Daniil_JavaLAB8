@@ -49,5 +49,5 @@ src/
 │       │   ├── list.html                   
 │       │   └── form.html
 │       │
-│       └── application.properties          # конфигурация
+│       └── application.properties         
 ```
