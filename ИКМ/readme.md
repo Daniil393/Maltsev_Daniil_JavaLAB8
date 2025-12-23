@@ -15,20 +15,20 @@
 src/
 ├── main/
 │   ├── java/ru/psu/librarymvc/
-│   │   ├── AlbumManagerApplication.java    # главный класс
+│   │   ├── AlbumManagerApplication.java   
 │   │   ├── controller/
-│   │   │   ├── AuthorController.java       # контроллер авторов
-│   │   │   ├── PublisherController.java    # контроллер издательств
-│   │   │   ├── HomeController.java         # контроллер главной страницы
-│   │   │   └── BookController.java         # контроллер книг
+│   │   │   ├── AuthorController.java      
+│   │   │   ├── PublisherController.java   
+│   │   │   ├── HomeController.java         
+│   │   │   └── BookController.java         
 │   │   ├── entity/
-│   │   │   ├── Author.java                 # класс с сущностью автора
-│   │   │   ├── Book.java                   # класс с сущностью книги
-│   │   │   └── Publisher.java              # класс с сущностью издательства
+│   │   │   ├── Author.java                
+│   │   │   ├── Book.java                   
+│   │   │   └── Publisher.java            
 │   │   └── repository/
-│   │       ├── AuthorRepository.java       # репозиторий для работы с БД
-│   │       ├── BookRepository.java         # репозиторий для работы с БД
-│   │       └── PublisherRepository.java    # репозиторий для работы с БД
+│   │       ├── AuthorRepository.java      
+│   │       ├── BookRepository.java        
+│   │       └── PublisherRepository.java    
 │   │   
 │   │       
 │   └── resources/
