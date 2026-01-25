@@ -30,7 +30,7 @@ public class Cat implements Meowable {
         s.append("!");
         System.out.println(s.toString());
 
-        meowCount += n; // увеличиваем счётчик на n
+        meowCount += n;
     }
 
     public int getMeowCount() {
@@ -41,4 +41,5 @@ public class Cat implements Meowable {
     public String toString() {
         return "кот: " + name;
     }
+
 }
