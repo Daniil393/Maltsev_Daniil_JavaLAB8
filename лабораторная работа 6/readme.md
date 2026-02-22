@@ -6,35 +6,36 @@
 
 # Классы и аннотации к заданиям 1 - 8:
 
-1) public @interface Invoke
-   public class InvokeProcessor
-   public class TestClass
+1) **Invoke**
+   - @interface Invoke
+   - class InvokeProcessor
+   - class TestClass
 
-2) public @interface Default
+3) public @interface Default
    public class DefaultProcessor
    public class TestClass2
 
-3) public enum Mode
+4) public enum Mode
    public @interface ToString
    public class ToStringProcessor
    public class Person
 
-4) public @interface Validate
+5) public @interface Validate
    public class ValidateProcessor
    public class TestClass3
 
-5) public @interface Two
+6) public @interface Two
    public class TwoProcessor
    public class TestClass4
 
-6) public @interface Cache
+7) public @interface Cache
    public class CacheProcessor
    public class TestClass5
    public class TestClass6
 
-7)
-
 8)
+
+9)
 
 Рассмотрим каждый класс и аннотацию индивидуально
 
