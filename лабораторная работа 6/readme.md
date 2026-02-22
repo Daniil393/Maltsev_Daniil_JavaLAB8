@@ -89,7 +89,7 @@ public static void process(Object obj):
      
      Указывает, что аннотацию можно применять только к методам.
 
-   - @Retention(RetentionPolicy.RUNTIME)
+   - @Retention(RetentionPolicy.RUNTIME)\
    Определяет, что аннотация сохраняется во время выполнения программы и доступна через механизм рефлексии.
 
    - public @interface Invoke
