@@ -11,31 +11,34 @@
    - class InvokeProcessor
    - class TestClass
 
-3) public @interface Default
-   public class DefaultProcessor
-   public class TestClass2
+2) **Default**
+   - @interface Default
+   - class DefaultProcessor
+   - class TestClass2
 
-4) public enum Mode
-   public @interface ToString
-   public class ToStringProcessor
-   public class Person
+3) **ToString**
+   - enum Mode
+   - @interface ToString
+   - class ToStringProcessor
+   - class Person
 
-5) public @interface Validate
-   public class ValidateProcessor
-   public class TestClass3
+4) **Validate**
+   - @interface Validate
+   - class ValidateProcessor
+   - class TestClass3
 
-6) public @interface Two
-   public class TwoProcessor
-   public class TestClass4
+5) **Two**
+   - @interface Two
+   - class TwoProcessor
+   - class TestClass4
 
-7) public @interface Cache
-   public class CacheProcessor
-   public class TestClass5
-   public class TestClass6
+6) **Cache**
+   - @interface Cache
+   - class CacheProcessor
+   - class TestClass5
+   - class TestClass6
 
-8)
 
-9)
 
 Рассмотрим каждый класс и аннотацию индивидуально
 
@@ -70,11 +73,26 @@ public static void process(Object obj):
   - Делает такие методы доступными (в том числе private).
   - Вызывает их с помощью method.invoke().
 
-### Класс TestClass
+### Класс TestClass - это тестовый класс для демонстрации работы аннотации @Invoke и класса InvokeProcessor.
+В классе объявлены три метода:
+   - methodOne() — помечен аннотацией @Invoke
+   - methodTwo() — обычный метод (без аннотации)
+   - methodThree() — также помечен аннотацией @Invoke
 
+При передаче объекта TestClass в InvokeProcessor.process() будут автоматически вызваны только методы methodOne() и methodThree(), так как они содержат аннотацию @Invoke.
 
+### Аннотация Invoke
+@Invoke — это пользовательская аннотация, предназначенная для пометки методов, которые должны быть автоматически вызваны во время выполнения программы.
 
+Описание:
+   - @Target(ElementType.METHOD)
+     Указывает, что аннотацию можно применять только к методам.
 
+   - @Retention(RetentionPolicy.RUNTIME)
+     Определяет, что аннотация сохраняется во время выполнения программы и доступна через механизм рефлексии.
+
+   - public @interface Invoke
+     Объявляет собственную аннотацию без параметров.
 
 
 
