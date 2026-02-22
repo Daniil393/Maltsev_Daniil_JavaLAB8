@@ -86,26 +86,24 @@ public static void process(Object obj):
 
 Описание:
    - @Target(ElementType.METHOD)
+     
      Указывает, что аннотацию можно применять только к методам.
 
    - @Retention(RetentionPolicy.RUNTIME)
+     
      Определяет, что аннотация сохраняется во время выполнения программы и доступна через механизм рефлексии.
 
    - public @interface Invoke
+     
      Объявляет собственную аннотацию без параметров.
-
-
-
-
-
-
-
-
 
 Результат выполнения задания:
 
 ```java
+Запуск обработки Invoke
 
+Method three invoked
+Method one invoked
 ```
 
 
