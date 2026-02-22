@@ -36,7 +36,7 @@
    - @interface Cache
    - class CacheProcessor
    - class TestClass5
-   - class TestClass6
+   - class TestClass6\\
 
 
 
