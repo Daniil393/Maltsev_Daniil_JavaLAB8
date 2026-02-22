@@ -36,8 +36,8 @@
    - @interface Cache
    - class CacheProcessor
    - class TestClass5
-   - class TestClass6
-&ensp;
+   - class TestClass6<br>
+
 
 
 Рассмотрим каждый класс и аннотацию индивидуально
