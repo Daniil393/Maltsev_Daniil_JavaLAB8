@@ -161,7 +161,10 @@ public static void process(Class<?> clas):
 ```java
 Запуск обработки Default
 
-Тип по умолчанию: double
+Аннотация на классе:
+Тип по умолчанию: java.lang.String
+Аннотация на поле: numberField
+Тип по умолчанию: java.lang.Integer
 ```
 
 &nbsp;
