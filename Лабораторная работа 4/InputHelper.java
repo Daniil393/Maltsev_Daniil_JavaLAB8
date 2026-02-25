@@ -1,7 +1,19 @@
 import java.util.Scanner;
 
+/**
+ * Утилитный класс для безопасного чтения данных с консоли.
+ * <p>
+ * Поддерживает ввод целых чисел, вещественных чисел и строк с проверкой корректности ввода.
+ */
 public class InputHelper {
 
+    /**
+     * Считывает целое число с консоли с повторным запросом при некорректном вводе.
+     *
+     * @param sc объект {@link Scanner} для чтения ввода
+     * @param prompt строка для пользователя
+     * @return введённое целое число
+     */
     public static int ReadInt(Scanner sc, String prompt) {
         int number;
         while (true) {
@@ -19,6 +31,13 @@ public class InputHelper {
         }
     }
 
+    /**
+     * Считывает число с плавающей запятой (double) с консоли с повторным запросом при некорректном вводе.
+     *
+     * @param sc объект {@link Scanner} для чтения ввода
+     * @param prompt строка для пользователя
+     * @return введённое число типа double
+     */
     public static double ReadDouble(Scanner sc, String prompt) {
         double number;
         while (true) {
@@ -36,6 +55,13 @@ public class InputHelper {
         }
     }
 
+    /**
+     * Считывает непустую строку с консоли с повторным запросом при пустом вводе.
+     *
+     * @param sc объект {@link Scanner} для чтения ввода
+     * @param prompt строка для пользователя
+     * @return введённая непустая строка
+     */
     public static String ReadString(Scanner sc, String prompt) {
         while (true) {
             System.out.print(prompt);
