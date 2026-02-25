@@ -44,7 +44,6 @@ public class Main {
             System.out.println("4 - Validate");
             System.out.println("5 - Two");
             System.out.println("6 - Cache");
-            System.out.println("7 - ");
             System.out.println("0 - Выход");
             System.out.print("Ваш выбор: ");
 
@@ -103,15 +102,13 @@ public class Main {
 
                     break;
 
-                case "7":
-
                 case "0":
                     System.out.println("Выход из программы");
                     sc.close();
                     return;
 
                 default:
-                    System.out.println("Ошибка: выберите пункт из меню (0-8) ");
+                    System.out.println("Ошибка: выберите пункт из меню (0-6) ");
             }
         }
     }
