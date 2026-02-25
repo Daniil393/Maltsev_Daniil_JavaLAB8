@@ -4,8 +4,28 @@ import zadanie_2_2.*;
 import zadanie_3.*;
 import java.util.*;
 
+/**
+ * Главный класс для выполнения лабораторной работы №4.
+ * <p>
+ * Класс содержит консольное меню для работы с различными заданиями лабораторной работы:
+ *     Обобщенная коробка
+ *     Сравнимые объекты (Person и Book)
+ *     Поиск максимума среди коробок с числами
+ *     Обобщенные методы с автовыводом типа (функция, фильтр, сокращение, коллекционирование)
+ * Пользователь взаимодействует с программой через консольное меню с вложенными подменю.
+ * <p>
+ * Все операции защищены обработкой исключений {@link IllegalStateException} и другими возможными исключениями ввода.
+ */
 public class Main {
 
+    /**
+     * Точка входа в программу.
+     * <p>
+     * Метод запускает бесконечный цикл меню, позволяя пользователю выбирать
+     * задания лабораторной работы и выполнять соответствующие действия.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         InputHelper inputHelper = new InputHelper();
@@ -400,7 +420,7 @@ public class Main {
                                 List<IntegerWrapper> ints = InputReaders.readIntegerList(sc);
 
                                 List<List<IntegerWrapper>> result = CollectUtil.collect(ints,
-                                        // Создание результирующей коллекции - это список подсписков
+                                        // Создание результирующей коллекции
                                         () -> {
                                             List<List<IntegerWrapper>> list = new ArrayList<>();
                                             list.add(new ArrayList<>()); // positives
@@ -437,8 +457,6 @@ public class Main {
 
                             case "3":
 
-                                // Оператор :: сокращенная запись для доступа(ссылки) на метод из функционального интерфейса при использовании лямбда выражения
-                                // То есть вместо того, чтобы писать лямбду: () -> new HashSet<T>(), мы можем записать: HashSet::new
                                 List<StringWrapper> strings1 = InputReaders.readStringList(sc);
                                 Set<StringWrapper> unique = CollectUtil.collect(strings1, HashSet::new, Set::add);
 
