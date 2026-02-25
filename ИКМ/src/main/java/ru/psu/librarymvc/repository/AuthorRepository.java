@@ -1,0 +1,10 @@
+package ru.psu.librarymvc.repository;
+
+import ru.psu.librarymvc.entity.Author;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AuthorRepository extends JpaRepository<Author, Integer> {
+    boolean existsByNameIgnoreCase(String name);
+}
