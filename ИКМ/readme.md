@@ -1,6 +1,6 @@
 # Итоговая работа по дисциплине "Язык программирования Java". ИКНТ, Мальцев Даниил ИТ18 - группа LAB8.
 
-<img width="1920" height="1037" alt="image" src="https://github.com/user-attachments/assets/8c7799d4-044c-42e8-9165-6e7ba6a1962b" />
+<img width="1920" height="983" alt="image" src="https://github.com/user-attachments/assets/308ac8b3-a1e0-47c0-ac04-793e231b09d8" />
 
 Проект представляет из себя Spring Boot Web MVC приложение для управления виртуальной библиотекой с 3 таблицами БД (postgreSQL).
 
