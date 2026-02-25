@@ -15,8 +15,32 @@ import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 import java.util.*;
 
+/**
+ * Основной класс программы для демонстрации лабораторной работы №3.
+ * <p>
+ * Включает меню с различными задачами:
+ *     Работа с пистолетами (Pistol, Pistol2, Pistol3)
+ *     Проверка непустых имён (Name)
+ *     Телефонный справочник (TelephoneDirectory)
+ *     Автоматы (AutomaticGun, AutomaticGun2, AutomaticGun3)
+ *     Сравнение точек (Point)
+ *     Возведение в степень с проверкой 0^0
+ * <p>
+ * Все операции выводят результаты на консоль.
+ */
 public class Main {
 
+    /**
+     * Возводит число {@code x} в степень {@code y}.
+     * <p>
+     * Оба числа передаются как строки. Метод проверяет корректность ввода.
+     *
+     * @param xStr строковое представление основания
+     * @param yStr строковое представление показателя степени
+     * @return результат возведения в степень
+     * @throws ArithmeticException если x=0 и y=0
+     * @throws NumberFormatException если строки не могут быть преобразованы в целые числа
+     */
     public static double power(String xStr, String yStr) {
         int x = parseInt(xStr);
         int y = parseInt(yStr);
@@ -28,6 +52,13 @@ public class Main {
         return pow(x, y);
     }
 
+    /**
+     * Точка входа в программу.
+     * <p>
+     * Запускает бесконечное меню с выбором различных лабораторных упражнений.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
