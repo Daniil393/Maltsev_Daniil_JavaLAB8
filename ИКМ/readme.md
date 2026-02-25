@@ -15,7 +15,10 @@
 src/
 └── main/
    ├── java/ru/psu/librarymvc/
-   │   ├── AlbumManagerApplication.java   
+   │   ├── AlbumManagerApplication.java
+   │   ├── validation/
+   │   │    ├── CurrentYearValidator
+   │   │    └── MaxCurrentYear
    │   ├── controller/
    │   │   ├── AuthorController.java      
    │   │   ├── PublisherController.java   
